@@ -45,7 +45,7 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
 
     @Override
     public String getSerializedEvent() {
-        return getEvent().getSerializedValue();
+        return getEvent() != null ? getEvent().getSerializedValue() : null;
     }
 
     @Override
