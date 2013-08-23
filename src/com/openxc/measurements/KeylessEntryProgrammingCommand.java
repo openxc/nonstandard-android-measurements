@@ -2,8 +2,8 @@ package com.openxc.measurements;
 
 import java.util.Locale;
 
-import com.openxc.units.State;
 import com.openxc.units.KeylessEntryCode;
+import com.openxc.units.State;
 
 public class KeylessEntryProgrammingCommand extends BaseMeasurement<
         State<KeylessEntryProgrammingCommand.Command>> {
@@ -25,6 +25,10 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
         super(new State<Command>(command), new KeylessEntryCode(code));
     }
 
+    public KeylessEntryProgrammingCommand(Command command) {
+        super(new State<Command>(command));
+    }
+
     public KeylessEntryProgrammingCommand(String command, String code) {
         this(Command.valueOf(command.toUpperCase(Locale.US)), code);
     }
@@ -32,6 +36,16 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
     @Override
     public String getSerializedValue() {
         return getValue().enumValue().toString();
+    }
+
+    @Override
+    public String getEvent() {
+        return (String) super.getEvent();
+    }
+
+    @Override
+    public String getSerializedEvent() {
+        return getEvent();
     }
 
     @Override
