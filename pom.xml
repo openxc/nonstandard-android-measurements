@@ -3,7 +3,7 @@
 
     <artifactId>openxc-custom-measurements</artifactId>
     <groupId>com.openxcplatform</groupId>
-    <version>4.0.2</version>
+    <version>4.0.3-SNAPSHOT</version>
     <packaging>apklib</packaging>
     <name>Custom Measurements for OpenXC Android Library</name>
     <description>Custom Measurements for OpenXC Android Library</description>
