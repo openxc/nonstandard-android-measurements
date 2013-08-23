@@ -39,13 +39,13 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
     }
 
     @Override
-    public String getEvent() {
-        return (String) super.getEvent();
+    public KeylessEntryCode getEvent() {
+        return (KeylessEntryCode) super.getEvent();
     }
 
     @Override
     public String getSerializedEvent() {
-        return getEvent();
+        return getEvent().getSerializedValue();
     }
 
     @Override
