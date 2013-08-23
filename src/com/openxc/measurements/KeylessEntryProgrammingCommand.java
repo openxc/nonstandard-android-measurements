@@ -35,7 +35,7 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
 
     @Override
     public String getSerializedValue() {
-        return getValue().enumValue().toString();
+        return getValue().enumValue().toString().toLowerCase();
     }
 
     @Override
