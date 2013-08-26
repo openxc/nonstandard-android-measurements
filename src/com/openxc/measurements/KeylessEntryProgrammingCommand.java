@@ -33,6 +33,10 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
         this(Command.valueOf(command.toUpperCase(Locale.US)), code);
     }
 
+    public KeylessEntryProgrammingCommand(String command) {
+        this(Command.valueOf(command.toUpperCase(Locale.US)));
+    }
+
     @Override
     public String getSerializedValue() {
         return getValue().enumValue().toString().toLowerCase();
@@ -46,6 +50,16 @@ public class KeylessEntryProgrammingCommand extends BaseMeasurement<
     @Override
     public String getSerializedEvent() {
         return getEvent() != null ? getEvent().getSerializedValue() : null;
+    }
+
+    @Override
+    public KeylessEntryCode getEvent() {
+        return (KeylessEntryCode) super.getEvent();
+    }
+
+    @Override
+    public String getSerializedEvent() {
+        return getEvent() == null ? null : getEvent().getSerializedValue();
     }
 
     @Override
