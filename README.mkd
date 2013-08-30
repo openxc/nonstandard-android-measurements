@@ -7,9 +7,13 @@ This Android library is a sort of holding pen for non-standard or non-public
 measurement and unit types that may be output from an OpenXC vehicle interface.
 The source files here should not contain any proprietary information.
 
+Some of these measurements may be made available for short-term events and
+hackathons, but do not be surprised when they don't work with the normal public
+release of OpenXC vehicle interface firmware.
+
 ## License
 
-Copyright (c) 2011-2013 Ford Motor Company
+Copyright (c) 2013 Ford Motor Company
 Licensed under the BSD license.
 
 [OpenXC]: http://openxcplatform.com
