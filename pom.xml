@@ -79,6 +79,7 @@
                         -d ${project.build.directory}/apidocs
                     </additionalparam>
                     <useStandardDocletOptions>false</useStandardDocletOptions>
+                    <sourcepath>${basedir}/src/com/openxc/measurements</sourcepath>
                 </configuration>
             </plugin>
         </plugins>
