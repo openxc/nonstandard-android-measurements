@@ -1,0 +1,2817 @@
+<api>
+<package name="com.openxc.measurements"
+>
+<class name="ACCompressorPower"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ACCompressorPower"
+ type="com.openxc.measurements.ACCompressorPower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ACCompressorPower"
+ type="com.openxc.measurements.ACCompressorPower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Watt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ac_compressor_power&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ActualSoc"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ActualSoc"
+ type="com.openxc.measurements.ActualSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ActualSoc"
+ type="com.openxc.measurements.ActualSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;actual_soc&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AirConditioning"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AirConditioning"
+ type="com.openxc.measurements.AirConditioning"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.AirConditioning.ACCommands&gt;">
+</parameter>
+</constructor>
+<constructor name="AirConditioning"
+ type="com.openxc.measurements.AirConditioning"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.AirConditioning.ACCommands">
+</parameter>
+</constructor>
+<constructor name="AirConditioning"
+ type="com.openxc.measurements.AirConditioning"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;climate_ac&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AirConditioning.ACCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.AirConditioning.ACCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.AirConditioning.ACCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="AmbientLightColorCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AmbientLightColorCommand"
+ type="com.openxc.measurements.AmbientLightColorCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.RgbColor">
+</parameter>
+</constructor>
+<constructor name="AmbientLightColorCommand"
+ type="com.openxc.measurements.AmbientLightColorCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="red" type="int">
+</parameter>
+<parameter name="green" type="int">
+</parameter>
+<parameter name="blue" type="int">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;custom_ambient_light_color&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="BatteryLevel"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BatteryLevel"
+ type="com.openxc.measurements.BatteryLevel"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="BatteryLevel"
+ type="com.openxc.measurements.BatteryLevel"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;battery_level&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="BatteryTemperature"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BatteryTemperature"
+ type="com.openxc.measurements.BatteryTemperature"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="BatteryTemperature"
+ type="com.openxc.measurements.BatteryTemperature"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Degree">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;battery_temperature&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="BeepRequest"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="BeepRequest"
+ type="com.openxc.measurements.BeepRequest"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="BeepRequest"
+ type="com.openxc.measurements.BeepRequest"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;beep_request&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ChargeTime"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ChargeTime"
+ type="com.openxc.measurements.ChargeTime"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ChargeTime"
+ type="com.openxc.measurements.ChargeTime"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Hour">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hours_until_charged&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ChargingPlugStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ChargingPlugStatus"
+ type="com.openxc.measurements.ChargingPlugStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="ChargingPlugStatus"
+ type="com.openxc.measurements.ChargingPlugStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;charging_plug_status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ChargingStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ChargingStatus"
+ type="com.openxc.measurements.ChargingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.ChargingStatus.ChargeStatusTypes&gt;">
+</parameter>
+</constructor>
+<constructor name="ChargingStatus"
+ type="com.openxc.measurements.ChargingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.ChargingStatus.ChargeStatusTypes">
+</parameter>
+</constructor>
+<constructor name="ChargingStatus"
+ type="com.openxc.measurements.ChargingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;charging_status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ChargingStatus.ChargeStatusTypes"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.ChargingStatus.ChargeStatusTypes"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.ChargingStatus.ChargeStatusTypes[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ClimateFanSpeed"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ClimateFanSpeed"
+ type="com.openxc.measurements.ClimateFanSpeed"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ClimateFanSpeed"
+ type="com.openxc.measurements.ClimateFanSpeed"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Level">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;climate_fan_speed&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ClimateMode"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ClimateMode"
+ type="com.openxc.measurements.ClimateMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.ClimateMode.ClimateControls&gt;">
+</parameter>
+</constructor>
+<constructor name="ClimateMode"
+ type="com.openxc.measurements.ClimateMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.ClimateMode.ClimateControls">
+</parameter>
+</constructor>
+<constructor name="ClimateMode"
+ type="com.openxc.measurements.ClimateMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;climate_mode&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ClimateMode.ClimateControls"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.ClimateMode.ClimateControls"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.ClimateMode.ClimateControls[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ClimateTemperature"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ClimateTemperature"
+ type="com.openxc.measurements.ClimateTemperature"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ClimateTemperature"
+ type="com.openxc.measurements.ClimateTemperature"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Degree">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;climate_temp&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="CruiseControl"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CruiseControl"
+ type="com.openxc.measurements.CruiseControl"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="CruiseControl"
+ type="com.openxc.measurements.CruiseControl"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<constructor name="CruiseControl"
+ type="com.openxc.measurements.CruiseControl"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="com.openxc.measurements.CruiseControl.CruiseCommands">
+</parameter>
+</constructor>
+<method name="setCommand"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="com.openxc.measurements.CruiseControl.CruiseCommands">
+</parameter>
+</method>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="CruiseControl.CruiseCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.CruiseControl.CruiseCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.CruiseControl.CruiseCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="CustomerSoc"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CustomerSoc"
+ type="com.openxc.measurements.CustomerSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="CustomerSoc"
+ type="com.openxc.measurements.CustomerSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;customer_soc&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DcDcCurrent"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DcDcCurrent"
+ type="com.openxc.measurements.DcDcCurrent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="DcDcCurrent"
+ type="com.openxc.measurements.DcDcCurrent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Ampere">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;dcdc_current&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DcDcVoltage"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DcDcVoltage"
+ type="com.openxc.measurements.DcDcVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="DcDcVoltage"
+ type="com.openxc.measurements.DcDcVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Volt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;dcdc_voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DesiredEngineSpeed"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DesiredEngineSpeed"
+ type="com.openxc.measurements.DesiredEngineSpeed"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="DesiredEngineSpeed"
+ type="com.openxc.measurements.DesiredEngineSpeed"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.RotationsPerMinute">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;desired_eng_speed&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DesiredSoc"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DesiredSoc"
+ type="com.openxc.measurements.DesiredSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="DesiredSoc"
+ type="com.openxc.measurements.DesiredSoc"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;desired_soc&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DoorLocks"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DoorLocks"
+ type="com.openxc.measurements.DoorLocks"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.DoorLocks.LockCommands&gt;">
+</parameter>
+</constructor>
+<constructor name="DoorLocks"
+ type="com.openxc.measurements.DoorLocks"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.DoorLocks.LockCommands">
+</parameter>
+</constructor>
+<constructor name="DoorLocks"
+ type="com.openxc.measurements.DoorLocks"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;door_locks&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="DoorLocks.LockCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.DoorLocks.LockCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.DoorLocks.LockCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="DrivePower"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="DrivePower"
+ type="com.openxc.measurements.DrivePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="DrivePower"
+ type="com.openxc.measurements.DrivePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Watt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;drive_power&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EVMode"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EVMode"
+ type="com.openxc.measurements.EVMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.EVMode.EVModes&gt;">
+</parameter>
+</constructor>
+<constructor name="EVMode"
+ type="com.openxc.measurements.EVMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.EVMode.EVModes">
+</parameter>
+</constructor>
+<constructor name="EVMode"
+ type="com.openxc.measurements.EVMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ev_mode&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EVMode.EVModes"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.EVMode.EVModes"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.EVMode.EVModes[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ElectricRange"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ElectricRange"
+ type="com.openxc.measurements.ElectricRange"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="ElectricRange"
+ type="com.openxc.measurements.ElectricRange"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Kilometer">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;electric_range&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EngineMode"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EngineMode"
+ type="com.openxc.measurements.EngineMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.EngineMode.EngineModes&gt;">
+</parameter>
+</constructor>
+<constructor name="EngineMode"
+ type="com.openxc.measurements.EngineMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.EngineMode.EngineModes">
+</parameter>
+</constructor>
+<constructor name="EngineMode"
+ type="com.openxc.measurements.EngineMode"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;engine_mode&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EngineMode.EngineModes"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.EngineMode.EngineModes"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.EngineMode.EngineModes[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="EnginePower"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EnginePower"
+ type="com.openxc.measurements.EnginePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="EnginePower"
+ type="com.openxc.measurements.EnginePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Watt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;engine_power&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="FreshAirVent"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="FreshAirVent"
+ type="com.openxc.measurements.FreshAirVent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.FreshAirVent.VentModes&gt;">
+</parameter>
+</constructor>
+<constructor name="FreshAirVent"
+ type="com.openxc.measurements.FreshAirVent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.FreshAirVent.VentModes">
+</parameter>
+</constructor>
+<constructor name="FreshAirVent"
+ type="com.openxc.measurements.FreshAirVent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;climate_recirculating&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="FreshAirVent.VentModes"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.FreshAirVent.VentModes"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.FreshAirVent.VentModes[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FrontWasherStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="FrontWasherStatus"
+ type="com.openxc.measurements.FrontWasherStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="FrontWasherStatus"
+ type="com.openxc.measurements.FrontWasherStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;front_washer_splash&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HeadingDegrees"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HeadingDegrees"
+ type="com.openxc.measurements.HeadingDegrees"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HeadingDegrees"
+ type="com.openxc.measurements.HeadingDegrees"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Degree">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;heading&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HvBatteryCurrent"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HvBatteryCurrent"
+ type="com.openxc.measurements.HvBatteryCurrent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HvBatteryCurrent"
+ type="com.openxc.measurements.HvBatteryCurrent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Ampere">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hv_battery_current&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HvBatteryMaxVoltage"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HvBatteryMaxVoltage"
+ type="com.openxc.measurements.HvBatteryMaxVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HvBatteryMaxVoltage"
+ type="com.openxc.measurements.HvBatteryMaxVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Volt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hv_battery_max_voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HvBatteryMinVoltage"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HvBatteryMinVoltage"
+ type="com.openxc.measurements.HvBatteryMinVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HvBatteryMinVoltage"
+ type="com.openxc.measurements.HvBatteryMinVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Volt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hv_battery_min_voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="KeylessEntryProgrammingCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="KeylessEntryProgrammingCommand"
+ type="com.openxc.measurements.KeylessEntryProgrammingCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="com.openxc.units.State&lt;com.openxc.measurements.KeylessEntryProgrammingCommand.Command&gt;">
+</parameter>
+<parameter name="code" type="com.openxc.units.KeylessEntryCode">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingCommand"
+ type="com.openxc.measurements.KeylessEntryProgrammingCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="com.openxc.measurements.KeylessEntryProgrammingCommand.Command">
+</parameter>
+<parameter name="code" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingCommand"
+ type="com.openxc.measurements.KeylessEntryProgrammingCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="com.openxc.measurements.KeylessEntryProgrammingCommand.Command">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingCommand"
+ type="com.openxc.measurements.KeylessEntryProgrammingCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="java.lang.String">
+</parameter>
+<parameter name="code" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingCommand"
+ type="com.openxc.measurements.KeylessEntryProgrammingCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="command" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;keyless_entry_command&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="KeylessEntryProgrammingCommand.Command"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.KeylessEntryProgrammingCommand.Command"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.KeylessEntryProgrammingCommand.Command[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="KeylessEntryProgrammingStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="KeylessEntryProgrammingStatus"
+ type="com.openxc.measurements.KeylessEntryProgrammingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.KeylessEntryProgrammingStatus.Status&gt;">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingStatus"
+ type="com.openxc.measurements.KeylessEntryProgrammingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.KeylessEntryProgrammingStatus.Status">
+</parameter>
+</constructor>
+<constructor name="KeylessEntryProgrammingStatus"
+ type="com.openxc.measurements.KeylessEntryProgrammingStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;keyless_entry_programming_status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="KeylessEntryProgrammingStatus.Status"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.KeylessEntryProgrammingStatus.Status"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.KeylessEntryProgrammingStatus.Status[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="LastRegenEventScore"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LastRegenEventScore"
+ type="com.openxc.measurements.LastRegenEventScore"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="LastRegenEventScore"
+ type="com.openxc.measurements.LastRegenEventScore"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;last_regen_event_score&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="LeftDPadCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LeftDPadCommand"
+ type="com.openxc.measurements.LeftDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.LeftDPadCommand.LeftDPadCommands&gt;">
+</parameter>
+</constructor>
+<constructor name="LeftDPadCommand"
+ type="com.openxc.measurements.LeftDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.LeftDPadCommand.LeftDPadCommands">
+</parameter>
+</constructor>
+<constructor name="LeftDPadCommand"
+ type="com.openxc.measurements.LeftDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;left_dpad_command&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="LeftDPadCommand.LeftDPadCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.LeftDPadCommand.LeftDPadCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.LeftDPadCommand.LeftDPadCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="OilLife"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="OilLife"
+ type="com.openxc.measurements.OilLife"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="OilLife"
+ type="com.openxc.measurements.OilLife"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;oil_life&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="PassengerMirrorCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PassengerMirrorCommand"
+ type="com.openxc.measurements.PassengerMirrorCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.PassengerMirrorCommand.MirrorCommand&gt;">
+</parameter>
+</constructor>
+<constructor name="PassengerMirrorCommand"
+ type="com.openxc.measurements.PassengerMirrorCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.PassengerMirrorCommand.MirrorCommand">
+</parameter>
+</constructor>
+<constructor name="PassengerMirrorCommand"
+ type="com.openxc.measurements.PassengerMirrorCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;passenger_mirror_command&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="PassengerMirrorCommand.MirrorCommand"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.PassengerMirrorCommand.MirrorCommand"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.PassengerMirrorCommand.MirrorCommand[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="RearDefrost"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RearDefrost"
+ type="com.openxc.measurements.RearDefrost"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.RearDefrost.DefrostCommand&gt;">
+</parameter>
+</constructor>
+<constructor name="RearDefrost"
+ type="com.openxc.measurements.RearDefrost"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.RearDefrost.DefrostCommand">
+</parameter>
+</constructor>
+<constructor name="RearDefrost"
+ type="com.openxc.measurements.RearDefrost"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;rear_defrost&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="RearDefrost.DefrostCommand"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.RearDefrost.DefrostCommand"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.RearDefrost.DefrostCommand[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="RearWasherStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RearWasherStatus"
+ type="com.openxc.measurements.RearWasherStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="RearWasherStatus"
+ type="com.openxc.measurements.RearWasherStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;rear_washer_splash&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="RelativeDrivePower"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RelativeDrivePower"
+ type="com.openxc.measurements.RelativeDrivePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="RelativeDrivePower"
+ type="com.openxc.measurements.RelativeDrivePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;relative_drive_power&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="RelativeEnginePower"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RelativeEnginePower"
+ type="com.openxc.measurements.RelativeEnginePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="RelativeEnginePower"
+ type="com.openxc.measurements.RelativeEnginePower"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;relative_engine_power&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="RightDPadCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RightDPadCommand"
+ type="com.openxc.measurements.RightDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.RightDPadCommand.RightDPadCommands&gt;">
+</parameter>
+</constructor>
+<constructor name="RightDPadCommand"
+ type="com.openxc.measurements.RightDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.RightDPadCommand.RightDPadCommands">
+</parameter>
+</constructor>
+<constructor name="RightDPadCommand"
+ type="com.openxc.measurements.RightDPadCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;right_dpad_command&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="RightDPadCommand.RightDPadCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.RightDPadCommand.RightDPadCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.RightDPadCommand.RightDPadCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TirePressure"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TirePressure"
+ type="com.openxc.measurements.TirePressure"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.units.State&lt;com.openxc.measurements.TirePressure.Tire&gt;">
+</parameter>
+<parameter name="pressure" type="com.openxc.units.PoundsPerSquareInch">
+</parameter>
+</constructor>
+<constructor name="TirePressure"
+ type="com.openxc.measurements.TirePressure"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.TirePressure.Tire">
+</parameter>
+<parameter name="pressure" type="com.openxc.units.PoundsPerSquareInch">
+</parameter>
+</constructor>
+<constructor name="TirePressure"
+ type="com.openxc.measurements.TirePressure"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.TirePressure.Tire">
+</parameter>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tire_pressure&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="TirePressure.Tire"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.TirePressure.Tire"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.TirePressure.Tire[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TirePressureStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TirePressureStatus"
+ type="com.openxc.measurements.TirePressureStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.units.State&lt;com.openxc.measurements.TirePressure.Tire&gt;">
+</parameter>
+<parameter name="pressure" type="com.openxc.units.State&lt;com.openxc.measurements.TirePressureStatus.PressureStatus&gt;">
+</parameter>
+</constructor>
+<constructor name="TirePressureStatus"
+ type="com.openxc.measurements.TirePressureStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.TirePressure.Tire">
+</parameter>
+<parameter name="pressure" type="com.openxc.measurements.TirePressureStatus.PressureStatus">
+</parameter>
+</constructor>
+<constructor name="TirePressureStatus"
+ type="com.openxc.measurements.TirePressureStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.TirePressure.Tire">
+</parameter>
+<parameter name="status" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tire_pressure_status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="TirePressureStatus.PressureStatus"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.TirePressureStatus.PressureStatus"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.TirePressureStatus.PressureStatus[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="VehicleWakeCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="VehicleWakeCommand"
+ type="com.openxc.measurements.VehicleWakeCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="VehicleWakeCommand"
+ type="com.openxc.measurements.VehicleWakeCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vehicle_wake_command&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="VolumeSet"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="VolumeSet"
+ type="com.openxc.measurements.VolumeSet"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="VolumeSet"
+ type="com.openxc.measurements.VolumeSet"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Level">
+</parameter>
+</constructor>
+</class>
+<class name="VolumeSetPoint"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="VolumeSetPoint"
+ type="com.openxc.measurements.VolumeSetPoint"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="VolumeSetPoint"
+ type="com.openxc.measurements.VolumeSetPoint"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Level">
+</parameter>
+</constructor>
+</class>
+<class name="WLEStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="WLEStatus"
+ type="com.openxc.measurements.WLEStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Level">
+</parameter>
+</constructor>
+<constructor name="WLEStatus"
+ type="com.openxc.measurements.WLEStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wle_status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="WindowCommand"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="WindowCommand"
+ type="com.openxc.measurements.WindowCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.WindowCommand.WindowCommands&gt;">
+</parameter>
+</constructor>
+<constructor name="WindowCommand"
+ type="com.openxc.measurements.WindowCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.WindowCommand.WindowCommands">
+</parameter>
+</constructor>
+<constructor name="WindowCommand"
+ type="com.openxc.measurements.WindowCommand"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;window_command_passenger&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="WindowCommand.WindowCommands"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.WindowCommand.WindowCommands"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.WindowCommand.WindowCommands[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="WindowPosition"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="WindowPosition"
+ type="com.openxc.measurements.WindowPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.units.State&lt;com.openxc.measurements.WindowPosition.Window&gt;">
+</parameter>
+<parameter name="pressure" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<constructor name="WindowPosition"
+ type="com.openxc.measurements.WindowPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.WindowPosition.Window">
+</parameter>
+<parameter name="pressure" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<constructor name="WindowPosition"
+ type="com.openxc.measurements.WindowPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tire" type="com.openxc.measurements.WindowPosition.Window">
+</parameter>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;window_position&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="WindowPosition.Window"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.WindowPosition.Window"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.WindowPosition.Window[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+</api>
