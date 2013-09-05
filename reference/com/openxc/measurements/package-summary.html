@@ -180,17 +180,23 @@
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/EngineMode.html">EngineMode</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/EnginePower.html">EnginePower</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/EVMode.html">EVMode</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/EVStateOfCharge.html">EVStateOfCharge</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/FreshAirVent.html">FreshAirVent</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/FrontWasherStatus.html">FrontWasherStatus</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/GearLeverPosition.html">GearLeverPosition</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/HeadingDegrees.html">HeadingDegrees</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/HeaterStatus.html">HeaterStatus</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/HvBatteryCurrent.html">HvBatteryCurrent</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/HvBatteryMaxVoltage.html">HvBatteryMaxVoltage</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/HvBatteryMinVoltage.html">HvBatteryMinVoltage</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/HvBatteryVoltage.html">HvBatteryVoltage</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/HybridStateOfCharge.html">HybridStateOfCharge</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingCommand.html">KeylessEntryProgrammingCommand</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingStatus.html">KeylessEntryProgrammingStatus</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/LastRegenEventScore.html">LastRegenEventScore</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/LeftDPadCommand.html">LeftDPadCommand</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/OilLife.html">OilLife</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/OverallStateOfCharge.html">OverallStateOfCharge</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/PassengerMirrorCommand.html">PassengerMirrorCommand</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/RearDefrost.html">RearDefrost</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/RearWasherStatus.html">RearWasherStatus</a></li>
@@ -219,6 +225,7 @@
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/EngineMode.EngineModes.html">EngineMode.EngineModes</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/EVMode.EVModes.html">EVMode.EVModes</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/FreshAirVent.VentModes.html">FreshAirVent.VentModes</a></li>
+        <li class="api apilevel-"><a href="../../../com/openxc/measurements/GearLeverPosition.GearPosition.html">GearLeverPosition.GearPosition</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingCommand.Command.html">KeylessEntryProgrammingCommand.Command</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingStatus.Status.html">KeylessEntryProgrammingStatus.Status</a></li>
         <li class="api apilevel-"><a href="../../../com/openxc/measurements/LeftDPadCommand.LeftDPadCommands.html">LeftDPadCommand.LeftDPadCommands</a></li>
@@ -430,14 +437,24 @@
 &nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/EVStateOfCharge.html">EVStateOfCharge</a></td>
+              <td class="jd-descrcol" width="100%">The EVStateOfCharge is the percent state of charge of the EV system
+&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/FreshAirVent.html">FreshAirVent</a></td>
               <td class="jd-descrcol" width="100%">The FreshAirVent measurement is for opening the fresh air vent to let air in
  or for closing the vent to recirculate cabin air 
 &nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/FrontWasherStatus.html">FrontWasherStatus</a></td>
               <td class="jd-descrcol" width="100%">FrontWasherStatus Measure is true when the wiper/windshield washer is on 
+&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/GearLeverPosition.html">GearLeverPosition</a></td>
+              <td class="jd-descrcol" width="100%">The GearLeverPosition is the current shifter position
 &nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
@@ -445,41 +462,61 @@
               <td class="jd-descrcol" width="100%">HeadingDegrees Measurement is the GPS heading in degrees.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HeaterStatus.html">HeaterStatus</a></td>
+              <td class="jd-descrcol" width="100%">HeaterStatus Measure is true when the  heater is on
+&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HvBatteryCurrent.html">HvBatteryCurrent</a></td>
               <td class="jd-descrcol" width="100%">The HvBatteryCurrent measurement is the total current flow into or out of 
  the HV battery.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HvBatteryMaxVoltage.html">HvBatteryMaxVoltage</a></td>
               <td class="jd-descrcol" width="100%">Upper Voltage limit of HV battery
  The valid range for this measurement is from 0 to 510 Volts.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HvBatteryMinVoltage.html">HvBatteryMinVoltage</a></td>
               <td class="jd-descrcol" width="100%">Lower Voltage limit of HV battery
  The valid range for this measurement is from 0 to 510 Volts.&nbsp;</td>
           </tr>
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HvBatteryVoltage.html">HvBatteryVoltage</a></td>
+              <td class="jd-descrcol" width="100%">Current voltage of HV Battery
+ The valid range for this measurement is from 0 to 510 Volts.&nbsp;</td>
+          </tr>
         <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/HybridStateOfCharge.html">HybridStateOfCharge</a></td>
+              <td class="jd-descrcol" width="100%">The HybridStateOfCharge is the percent state of charge of the hybrid system
+&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingCommand.html">KeylessEntryProgrammingCommand</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingStatus.html">KeylessEntryProgrammingStatus</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/LastRegenEventScore.html">LastRegenEventScore</a></td>
               <td class="jd-descrcol" width="100%">The LastRegenEventScore is the current engine power level
 &nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/LeftDPadCommand.html">LeftDPadCommand</a></td>
               <td class="jd-descrcol" width="100%">LeftDPadCommand captures presses on the left steering wheel dpad
   Note: the original function of the dpad is not affected.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/OilLife.html">OilLife</a></td>
               <td class="jd-descrcol" width="100%">The OilLife is the percentage remaining oil life
+&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/OverallStateOfCharge.html">OverallStateOfCharge</a></td>
+              <td class="jd-descrcol" width="100%">The OverallStateOfCharge is the percent state of charge of the whole system
 &nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
@@ -591,42 +628,46 @@
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../com/openxc/measurements/GearLeverPosition.GearPosition.html">GearLeverPosition.GearPosition</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingCommand.Command.html">KeylessEntryProgrammingCommand.Command</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/KeylessEntryProgrammingStatus.Status.html">KeylessEntryProgrammingStatus.Status</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/LeftDPadCommand.LeftDPadCommands.html">LeftDPadCommand.LeftDPadCommands</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/PassengerMirrorCommand.MirrorCommand.html">PassengerMirrorCommand.MirrorCommand</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/RearDefrost.DefrostCommand.html">RearDefrost.DefrostCommand</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/RightDPadCommand.RightDPadCommands.html">RightDPadCommand.RightDPadCommands</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/TirePressure.Tire.html">TirePressure.Tire</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/TirePressureStatus.PressureStatus.html">TirePressureStatus.PressureStatus</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/WindowCommand.WindowCommands.html">WindowCommand.WindowCommands</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../com/openxc/measurements/WindowPosition.Window.html">WindowPosition.Window</a></td>
               <td class="jd-descrcol" width="100%">&nbsp;</td>
           </tr>

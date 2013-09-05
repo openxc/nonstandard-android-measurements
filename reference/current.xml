@@ -1155,6 +1155,46 @@
 >
 </method>
 </class>
+<class name="EVStateOfCharge"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EVStateOfCharge"
+ type="com.openxc.measurements.EVStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="EVStateOfCharge"
+ type="com.openxc.measurements.EVStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ev_state_of_charge&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
 <class name="ElectricRange"
  extends="com.openxc.measurements.BaseMeasurement"
  abstract="false"
@@ -1441,6 +1481,89 @@
 >
 </field>
 </class>
+<class name="GearLeverPosition"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GearLeverPosition"
+ type="com.openxc.measurements.GearLeverPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.State&lt;com.openxc.measurements.GearLeverPosition.GearPosition&gt;">
+</parameter>
+</constructor>
+<constructor name="GearLeverPosition"
+ type="com.openxc.measurements.GearLeverPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.measurements.GearLeverPosition.GearPosition">
+</parameter>
+</constructor>
+<constructor name="GearLeverPosition"
+ type="com.openxc.measurements.GearLeverPosition"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;gear_lever_position&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="GearLeverPosition.GearPosition"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.openxc.measurements.GearLeverPosition.GearPosition"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.openxc.measurements.GearLeverPosition.GearPosition[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <class name="HeadingDegrees"
  extends="com.openxc.measurements.BaseMeasurement"
  abstract="false"
@@ -1474,6 +1597,46 @@
  transient="false"
  volatile="false"
  value="&quot;heading&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HeaterStatus"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HeaterStatus"
+ type="com.openxc.measurements.HeaterStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Boolean">
+</parameter>
+</constructor>
+<constructor name="HeaterStatus"
+ type="com.openxc.measurements.HeaterStatus"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Boolean">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;heater_status&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1594,6 +1757,86 @@
  transient="false"
  volatile="false"
  value="&quot;hv_battery_min_voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HvBatteryVoltage"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HvBatteryVoltage"
+ type="com.openxc.measurements.HvBatteryVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HvBatteryVoltage"
+ type="com.openxc.measurements.HvBatteryVoltage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Volt">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hv_battery_voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HybridStateOfCharge"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HybridStateOfCharge"
+ type="com.openxc.measurements.HybridStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="HybridStateOfCharge"
+ type="com.openxc.measurements.HybridStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;hybrid_state_of_charge&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1949,6 +2192,46 @@
  transient="false"
  volatile="false"
  value="&quot;oil_life&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="OverallStateOfCharge"
+ extends="com.openxc.measurements.BaseMeasurement"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="OverallStateOfCharge"
+ type="com.openxc.measurements.OverallStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.Number">
+</parameter>
+</constructor>
+<constructor name="OverallStateOfCharge"
+ type="com.openxc.measurements.OverallStateOfCharge"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="com.openxc.units.Percentage">
+</parameter>
+</constructor>
+<field name="ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;overall_state_of_charge&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
