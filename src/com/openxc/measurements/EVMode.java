@@ -11,12 +11,12 @@ public class EVMode extends BaseMeasurement<State<EVMode.EVModes>> {
 	public final static String ID = "ev_mode";
 	
 	public enum EVModes {
-        NO_PREF,
-        EV_DRIVING,
-        CHARGE_DEPLETING,
-        CHARGE_SUSTAINING,
-        CHARGE_DEPLETING_ENGINE_ON,
-        CHARGE_SUSTAINING_ENGINE_ON
+		SUSTAIN_ONLY,
+		AUTO_DEPLETE,
+		AUTO_SUSTAIN,
+		FORCED_SUSTAIN,
+		FORCED_DEPLETE,
+		EV_OVERRIDE
 	}
 	
 	public EVMode(State<EVModes> value) {
