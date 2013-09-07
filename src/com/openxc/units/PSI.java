@@ -3,9 +3,9 @@ package com.openxc.units;
 /**
  * Pounds per square inch is an imperial derived unit of pressure.
  */
-public class PoundsPerSquareInch extends Quantity<Number> {
+public class PSI extends Quantity<Number> {
 
-    public PoundsPerSquareInch(Number value) {
+    public PSI(Number value) {
         super(value);
     }
 }
