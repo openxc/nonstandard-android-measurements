@@ -11,18 +11,18 @@ public class ClimateMode extends BaseMeasurement<State<ClimateMode.ClimateContro
 	public final static String ID = "climate_mode";
 	
 	public enum ClimateControls {
-		UNUSED(0),
-		PANEL_VENT(1),
-		PANEL_FLOOR(2),
-		FLOOR(3),
-		FAN_SPEED_INCREMENT(11),
-		FAN_SPEED_DECREMENT(12),
-		AUTO(13),
-		MAX_AC(14),
-		RECIRCULATION(15),
-		FRONT_DEFROST(16),
-		REAR_DEFROST(17),
-		MAX_DEFROTS(22)
+		OFF,
+		PANEL_VENT,
+		PANEL_FLOOR,
+		FLOOR,
+		FAN_SPEED_INCREMENT,
+		FAN_SPEED_DECREMENT,
+		AUTO,
+		MAX_AC,
+		RECIRCULATION,
+		FRONT_DEFROST,
+		REAR_DEFROST,
+		MAX_DEFROST
 	}
 
 	public ClimateMode(State<ClimateControls> value) {
@@ -35,7 +35,7 @@ public class ClimateMode extends BaseMeasurement<State<ClimateMode.ClimateContro
     public ClimateMode(String value) {
         this(ClimateControls.valueOf(value.toUpperCase(Locale.US)));
     }
-	
+
     @Override
     public String getGenericName() {
         return ID;
