@@ -33,8 +33,8 @@ public class TirePressureStatus extends BaseMeasurement<State<TirePressure.Tire>
     }
 
     @Override
-    public PoundsPerSquareInch getEvent() {
-        return (PoundsPerSquareInch) super.getEvent();
+    public State<PressureStatus> getEvent() {
+        return (State<PressureStatus>) super.getEvent();
     }
 
     @Override
